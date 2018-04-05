@@ -1,6 +1,6 @@
 [submodule "reveal.js"]
-	path = reveal.js
+	path = lib/reveal.js
 	url = https://github.com/hakimel/reveal.js/
 [submodule "MathJax"]
-	path = MathJax
+	path = lib/MathJax
 	url = https://github.com/mathjax/MathJax
