@@ -2,19 +2,44 @@
 <section>
 
 
-<section>
-# Hello
+  <section>
 
-## World
-### World
+### Introduction
+
+<small>
+
+  <p class="fragment grow">grow</p>
+  <p class="fragment shrink">shrink</p>
+  <p class="fragment fade-out">fade-out</p>
+  <p class="fragment fade-up">fade-up (also down, left and right!)</p>
+  <p class="fragment current-visible">visible only once</p>
+  <p class="fragment highlight-current-blue">blue only once</p>
+  <p class="fragment highlight-red">highlight-red</p>
+  <p class="fragment highlight-green">highlight-green</p>
+  <p class="fragment highlight-blue">highlight-blue</p>
+
+</small>
+
+  </section>
+
+<section>
+
+## Formulas!
 
 \\[
- a \\sum_{ij} A \\color{red} asf
+  \\hat{T} (\\mathbf{a}) =
+   e ^ {\\mathbf{a}\\cdot\\nabla} =
+   e ^ {\\frac{i}{\\hbar}\\mathbf{a}\\cdot\\hat{\\mathbf{p}}}
 \\]
+
+
+$$ \\iiint_{V} f = 0$$
 
 </section>
 
 <section>
+
+## Python!
 
 ```python
 #! /usr/bin/env python3
@@ -23,52 +48,15 @@
 import sys
 import logging
 
-
-logger = logging.getLogger("papis")
-if "--debug" in sys.argv:
-    log_format = '%(relativeCreated)d-'
-    log_format += '%(levelname)s:%(name)s:%(message)s'
-    logging.basicConfig(level=logging.DEBUG, format=log_format)
-    sys.argv.pop(sys.argv.index("--debug"))
-    logger.debug("DEBUG MODE FOR DEVELOPERS ON")
-
-
-import papis.commands
-import papis.api
-logger.debug("Imported commands")
-
-
-def main():
-    try:
-        sys.exit(papis.commands.main())
-    except KeyboardInterrupt:
-        print('Getting you out of here...')
-
-
 if sys.version_info < (3, 2):
     raise Exception("This program must use python 3.2 or greater")
 
 if __name__ == "__main__":
     main()
 
-# vim:set et sw=4 ts=4 ft=python:
 ```
 
 </section>
 </section>
 
 
-<section>
-## World
-
-Hi there
-
-    - Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
-
-
-
-## Hack this code
-
-### Gamble
-
-</section>

@@ -16,6 +16,7 @@ index.html: index.md
 	pandoc \
 		--template=template/template-revealjs.html \
 		-t html5 \
+		-f markdown-tex_math_dollars \
 		-V author="$(AUTHOR)" \
 		-V title="$(TITLE)" \
 		-V date="$(DATE)" \
