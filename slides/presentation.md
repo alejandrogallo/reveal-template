@@ -8,7 +8,6 @@
 
 Hi there
 
-----
 
 ## Thanks!
 

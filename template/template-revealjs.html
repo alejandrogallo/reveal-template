@@ -58,33 +58,16 @@ $for(header-includes)$
 $endfor$
 </head>
 <body>
+
 $for(include-before)$
 $include-before$
 $endfor$
+
   <div class="reveal">
     <div class="slides">
 
-$if(title)$
-<section id="$idprefix$title-slide">
-  <h1 class="title">$title$</h1>
-$if(subtitle)$
-  <p class="subtitle">$subtitle$</p>
-$endif$
-$for(author)$
-  <p class="author">$author$</p>
-$endfor$
-$if(date)$
-  <p class="date">$date$</p>
-$endif$
-</section>
-$endif$
-$if(toc)$
-<section id="$idprefix$TOC">
-$table-of-contents$
-</section>
-$endif$
+      $body$
 
-$body$
     </div>
   </div>
 
@@ -236,7 +219,7 @@ $if(mathjax)$
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
+            displayMath: [['\[','\]']],
             balanceBraces: true,
             processEscapes: false,
             processRefs: true,
