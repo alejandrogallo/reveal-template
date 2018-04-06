@@ -3,7 +3,12 @@ include config.mk
 .PHONY: all run clean
 
 SLIDES = $(shell grep -E -h -o 'slides/.*' main.sed)
-$(info Slides: $(SLIDES))
+
+$(info )
+$(info Slides)
+$(info =======)
+$(info $(SLIDES))
+$(info )
 
 all: index.html
 
