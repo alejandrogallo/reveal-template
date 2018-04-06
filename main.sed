@@ -1,5 +1,5 @@
-r slides/title.md
-r slides/intro.md
-r slides/i2.md
-r slides/beamerslide.md
-r slides/end.md
+r slides/title.html
+r slides/i2.html
+r slides/beamerslide.html
+r slides/htmlexample.html
+r slides/end.html

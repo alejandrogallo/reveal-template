@@ -1,7 +1,9 @@
-<section>
-
 # Title of my talk
-### Fulano Mengano
-#### 2018-04-05, Somewhere
 
-</section>
+<center>
+Fulano mengano
+</center>
+
+---
+
+This is another slide

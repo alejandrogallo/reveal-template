@@ -10,17 +10,19 @@ all: index.html
 run: index.html
 	python -m SimpleHTTPServer 8080
 
-index.md: main.sed $(SLIDES) Makefile
+main.html: main.sed $(SLIDES) Makefile
 	echo | sed -f main.sed > $@
 
-%.md: %.tex
+%.html: %.tex
 	pandoc -f latex -t revealjs $< -o $@
 
-index.html: index.md
+%.html: %.md
+	pandoc -f markdown-tex_math_dollars -t revealjs $< -o $@
+
+index.html: main.html
 	pandoc \
 		--template=template/template-revealjs.html \
 		-t html5 \
-		-f markdown-tex_math_dollars \
 		-V author="$(AUTHOR)" \
 		-V title="$(TITLE)" \
 		-V date="$(DATE)" \
@@ -32,4 +34,4 @@ index.html: index.md
 
 clean:
 	-rm -f index.html
-	-rm -f index.md
+	-rm -f main.html
