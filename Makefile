@@ -58,7 +58,9 @@ index.html: main.html
 .FORCE:
 gh-pages:
 	$(MAKE) CDNLIBS=1
+	mv index.html gh-pages.html
 	git checkout gh-pages
+	mv gh-pages.html index.html
 	git add index.html
 	git commit -m Update
 
