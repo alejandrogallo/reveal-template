@@ -48,11 +48,19 @@ index.html: main.html
 		-V author="$(AUTHOR)" \
 		-V title="$(TITLE)" \
 		-V date="$(DATE)" \
-		-V revealjs-url=lib/reveal.js \
+		-V revealjs-url="$(REVEALJS_URL)" \
 		-V theme=$(THEME) \
-		-V mathjax=lib/MathJax \
+		-V mathjax="$(MATHJAX_URL)" \
 		-V transition=fade \
 		$< -o $@
+
+
+.FORCE:
+gh-pages:
+	$(MAKE) CDNLIBS=1
+	git checkout gh-pages
+	git add index.html
+	git commit -m Update
 
 clean:
 	-rm -f index.html
