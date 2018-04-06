@@ -24,6 +24,23 @@ main.html: main.sed $(SLIDES) Makefile
 %.html: %.md
 	pandoc -f markdown-tex_math_dollars -t revealjs $< -o $@
 
+dist: index.html
+	mkdir -p $@
+	cp $< $@/
+	{\
+		grep 'mathjax *:\|src *[=:]\|href *=' $< ; \
+		test -n "$(DIST_FILES)" && echo $(DIST_FILES) | tr ' ' '\n' || echo; \
+	} | \
+	tr '"'"'" '\n' | \
+	cat - | \
+	while read line; do \
+		test -e "$$line" && { \
+			echo "Copying $$line" ; \
+			mkdir -p $@/$$(dirname  "$$line"); \
+			cp -r "$$line" $@/$$(dirname  "$$line"); \
+		} || echo -n ;\
+	done
+
 index.html: main.html
 	pandoc \
 		--template=template/template-revealjs.html \
@@ -40,3 +57,4 @@ index.html: main.html
 clean:
 	-rm -f index.html
 	-rm -f main.html
+	-rm -rf dist
