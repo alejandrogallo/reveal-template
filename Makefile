@@ -2,7 +2,8 @@ include config.mk
 
 .PHONY: all run clean
 
-SLIDES = $(wildcard slides/*)
+SLIDES = $(shell grep -E -h -o 'slides/.*' main.sed)
+$(info Slides: $(SLIDES))
 
 all: index.html
 
@@ -11,6 +12,9 @@ run: index.html
 
 index.md: main.sed $(SLIDES) Makefile
 	echo | sed -f main.sed > $@
+
+%.md: %.tex
+	pandoc -f latex -t revealjs $< -o $@
 
 index.html: index.md
 	pandoc \
