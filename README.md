@@ -6,6 +6,10 @@ This template only uses very simple tools to set-up a presentation:
 * [pandoc](http://pandoc.org/installing.html)
 * sed
 
+I know, you want to see a preview, [here it is](
+https://alejandrogallo.github.io/reveal-template/
+).
+
 ## Features
 
 * Write in markdown, html or latex, which means that is also done with
