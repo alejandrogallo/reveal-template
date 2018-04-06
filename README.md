@@ -12,6 +12,8 @@ This template only uses very simple tools to set-up a presentation:
   people writing formulas in mind.
 * Automatic conversion from all formats into html.
 * Building just by hitting `make`.
+* You do not need an internet connection to use the slides, since
+  all libraries are linked locally.
 
 ## Getting started
 
