@@ -3,8 +3,9 @@
 This template only uses very simple tools to set-up a presentation:
 
 * Make
-* [pandoc](http://pandoc.org/installing.html)
+* m4
 * sed
+* [pandoc](http://pandoc.org/installing.html) (optional for latex conversion)
 
 I know, you want to see a preview, [here it is](
 https://alejandrogallo.github.io/reveal-template/
@@ -18,17 +19,26 @@ https://alejandrogallo.github.io/reveal-template/
 * Building just by hitting `make`.
 * You do not need an internet connection to use the slides, since
   all libraries are linked locally.
+* The revealjs template is a simple m4 script (`template/revealjs.m4`)
 
 ## Getting started
 
-Install [pandoc](http://pandoc.org/installing.html), on ubuntu/debian
+Pandoc is only needed for latex conversion, if you need it
+install [pandoc](http://pandoc.org/installing.html), on ubuntu/debian
 
 ```
 sudo apt-get install pandoc
 ```
 
+Clone repository
+
 ```
 git clone --recursive https://github.com/alejandrogallo/reveal-template
+```
+
+and make!
+
+```
 make
 ```
 

@@ -12,6 +12,7 @@ endif
 
 #beige black blood league moon night README.md serif simple sky solarized white
 THEME ?= beige
+TRANSITION = fade
 
 DIST_FILES ?=\
 lib/MathJax/config/ \

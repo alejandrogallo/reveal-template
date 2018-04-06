@@ -3,7 +3,3 @@
 <center>
 Fulano mengano
 </center>
-
----
-
-This is another slide

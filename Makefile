@@ -22,7 +22,7 @@ main.html: main.sed $(SLIDES) Makefile
 	pandoc -f latex -t revealjs $< -o $@
 
 %.html: %.md
-	pandoc -f markdown-tex_math_dollars -t revealjs $< -o $@
+	./template/markdown-to-html.sh "$<" > $@
 
 dist: index.html
 	mkdir -p $@
@@ -42,17 +42,16 @@ dist: index.html
 	done
 
 index.html: main.html
-	pandoc \
-		--template=template/template-revealjs.html \
-		-t html5 \
-		-V author="$(AUTHOR)" \
-		-V title="$(TITLE)" \
-		-V date="$(DATE)" \
-		-V revealjs-url="$(REVEALJS_URL)" \
-		-V theme=$(THEME) \
-		-V mathjax="$(MATHJAX_URL)" \
-		-V transition=fade \
-		$< -o $@
+	m4 \
+		-D __author__="$(AUTHOR)" \
+		-D __title__="$(TITLE)" \
+		-D __date__="$(DATE)" \
+		-D __revealjs_url__="$(REVEALJS_URL)" \
+		-D __theme__=$(THEME) \
+		-D __mathjax__="$(MATHJAX_URL)" \
+		-D __transition__=$(TRANSITION) \
+		template/revealjs.m4 \
+		> $@
 
 
 .FORCE:
