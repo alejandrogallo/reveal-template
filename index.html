@@ -1,57 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <title></title>
+  <meta name="generator" content="m4">
+  <title>Title of my talk</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/css/zenburn.css">
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
-  <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/beige.css" id="theme">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/beige.css" id="theme">
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement( 'link' );
@@ -70,123 +34,204 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   <div class="reveal">
     <div class="slides">
 
-      <section id="title-of-my-talk" class="slide level1">
-      <h1 id="title-of-my-talk">Title of my talk</h1>
-      Fulano mengano
-      </section>
-      <section class="slide level1">
-      <p>This is another slide</p>
-      </section>
-      <section id="coupled-cluster" class="slide level1">
-      <h1 id="coupled-cluster">Coupled Cluster</h1>
-      <p>The cluster operator</p>
-      <p>\[ \hat{T} = t^\mu \hat{\tau}_{\mu} \]</p>
-      <p>gives rise to the famous <em>Ansatz</em></p>
-      <p>\[ \hat{\Psi} = e ^ {\hat{T}} \]</p>
-      </section>
-      <section id="overview" class="slide level1">
-      <h1 id="overview">Overview</h1>
-      <table>
-      <thead>
-      <tr class="header">
-      <th style="text-align: left;">Foo</th>
-      <th style="text-align: left;">Bar</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr class="odd">
-      <td style="text-align: left;">1</td>
-      <td style="text-align: left;">2</td>
-      </tr>
-      </tbody>
-      </table>
-      </section>
-      <section class="slide level1">
-      <ul>
-      <li><p>Blah</p>
-      <div class="sourceCode">
-      <div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">template</span>&lt;<span class="kw">typename</span> C&gt; <span class="kw">class</span> Foo&lt;C&gt; {
-      }
-      
-      <span class="dt">int</span> main (<span class="dt">int</span> argc, <span class="dt">const</span> <span class="dt">char</span>* argv[]) {
-        <span class="kw">auto</span> f = [](){ <span class="kw">return</span> (argc == <span class="dv">1</span>); };
-        Foo&lt;<span class="dt">bool</span>&gt; x = <span class="dv">1</span>;
-      
-        <span class="kw">return</span> f();
-      }</code></pre></div>
-      </div></li>
-      </ul>
-      </section>
-      <section id="beamer" class="slide level1">
-      <h1 id="beamer">Beamer</h1>
-      <p>This is a very nice converted beamer slide:<br />
-      <span class="math display">$$\hat{H} \psi = E \psi$$</span><br />
-      And there is also inline math <span class="math inline">$ \sum_{n=0} ^{\infty} f(n) = 0 $</span>.</p>
-      </section>
-      <section id="section" class="slide level1">
-      <h1 id="section"></h1>
-      <p>Pandoc actually transforms latex documents and not purely beamer documents<br />
-      However it does not complain if there is a</p>
-      <pre><code>\begin{frame}{title}
-      \end{frame}</code></pre>
-      <p>environment somewhere</p>
-      <p><span class="math inline"><em>e</em><sup><em>e</em><sup><em>e</em><sup><em>e</em><sup><em>e</em><sup><em>e</em><sup><em>e</em></sup></sup></sup></sup></sup></sup></span> <span class="math inline"><em>π</em><sup><em>π</em><sup><em>π</em><sup><em>π</em><sup><em>π</em><sup><em>π</em><sup><em>π</em></sup></sup></sup></sup></sup></sup></span> <span class="math inline"><em>ψ</em><sup><em>ψ</em><sup><em>ψ</em><sup><em>ψ</em><sup><em>ψ</em><sup><em>ψ</em><sup><em>ψ</em></sup></sup></sup></sup></sup></sup></span></p>
-      </section>
-      <section>
-      <h1 id="pure-html-slide">Pure html slide</h1>
-      It is also nice to revive html as a markup language. $$ \int_{\partial A} f = 0 $$
-      <div class="sourceCode"><pre class="sourceCode latex"><code class="sourceCode latex">      
-              \int_{\partial A} f = 0
-            
-          </code></pre></div>
-      </section>
-      <section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="" data-background-video-muted="">
-      <h1 id="video-background" style="color:red">Video background</h1>
-      </section>
-      <section>
-      <section data-background="https://media.giphy.com/media/yjMJCtA5AJ6hi/giphy.gif">
-      <h1 id="gif-background" style="color:blue">Gif background</h1>
-      <h3 id="press-down-key" style="color:red">Press down key</h3>
-      </section>
-      <section data-background-color="#ffaa22" data-transition="zoom">
-      <h1 id="intro">Intro</h1>
-      <p>grow</p>
-      <p>shrink</p>
-      <p>fade-out</p>
-      <p>fade-up (also down, left and right!)</p>
-      <p>visible only once</p>
-      <p>blue only once</p>
-      <p>highlight-red</p>
-      <p>highlight-green</p>
-      <p>highlight-blue</p>
-      </section>
-      <section>
-      <h1 id="formulas">Formulas !</h1>
-      \[ \hat{T} (\mathbf{a}) = e ^ {\mathbf{a}\cdot\nabla} = e ^ {\frac{i}{\hbar}\mathbf{a}\cdot\hat{\mathbf{p}}} \] $$ \iiint_{V} f = 0$$
-      </section>
-      <section>
-      <h2 id="python">Python!</h2>
-      <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">
-      <span class="co">#! /usr/bin/env python3</span>
-      <span class="co"># -*- coding: utf-8 -*-</span>
-      
-      <span class="im">import</span> sys
-      <span class="im">import</span> logging
-      
-      <span class="cf">if</span> sys.version_info <span class="op">&lt;</span> (<span class="dv">3</span>, <span class="dv">2</span>):
-          <span class="cf">raise</span> <span class="pp">Exception</span>(<span class="st">&quot;This program must use python 3.2 or greater&quot;</span>)
-      
-      <span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:
-          main()
-      </code></pre></div>
-      </section>
-      </section>
-      <section class="slide level6">
-      <section data-background="https://media.giphy.com/media/wGY9K8upRdJFm/giphy.gif">
-      <h1 id="thank-you" style="color:white">Thank you!</h1>
-      <img src="https://media.giphy.com/media/LUIvcbR6yytz2/giphy.gif" />
-      </section>
-      </section>
+
+<section
+  data-separator='^---'
+  data-separator-vertical='^--'
+  data-markdown>
+  <textarea data-template>
+# Title of my talk
+
+<center>
+Fulano mengano
+</center>
+
+---
+
+Some other slide within markdown
+
+And now press the down key...
+
+
+--
+
+<!-- .slide: data-background="#aaffaf" -->
+<!-- .slide: data-transition="concave" -->
+
+<small>
+The Dirac equation in the form originally proposed by Dirac is:
+
+
+$$
+\left(\beta mc^2 + c\left(\sum_{n \mathop =1}^{3}\alpha_n p_n\right)\right) \psi (x,t) = i \hbar \frac{\partial\psi(x,t) }{\partial t}
+$$
+
+and the equation takes the form (remembering the definition
+of the covariant components of the 4-gradient)
+
+$$
+{\displaystyle i\hbar \gamma ^{\mu }\partial _{\mu }\psi -mc\psi =0}
+$$
+
+The complete system is summarized using the Minkowski metric on spacetime in the form
+
+$$
+\\{\gamma ^{\mu },\gamma ^{\nu }\\}=2\eta ^{\mu \nu }I_{4}
+$$
+
+where the bracket expression
+
+$$
+\\{a,b\\}=ab+ba
+$$
+
+</small>
+  </textarea>
+</section>
+<section
+  data-separator='^---'
+  data-separator-vertical='^--'
+  data-markdown>
+  <textarea data-template>
+## Coupled Cluster
+
+The cluster operator
+
+$$
+ \hat{T} = t^\mu \hat{\tau}_{\mu}
+$$
+
+gives rise to the famous *Ansatz*
+
+$$
+  \hat{\Psi} = e ^ {\hat{T}}
+$$
+
+
+
+
+---
+
+# Overview
+
+| Foo | Bar
+|----:|:----
+|  1  |  2
+
+
+- Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
+- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+  </textarea>
+</section>
+<section id="beamer" class="slide level1">
+<h1>Beamer</h1>
+<p>This is a very nice converted beamer slide: <br /><span class="math display">$$\hat{H} \psi = E \psi$$</span><br /> And there is also inline math <span class="math inline">$ \sum_{n=0} ^{\infty} f(n) = 0 $</span>.</p>
+</section>
+<section id="section" class="slide level1">
+<h1></h1>
+<p>Pandoc actually transforms latex documents and not purely beamer documents<br />
+However it does not complain if there is a</p>
+<pre><code>\begin{frame}{title}
+\end{frame}</code></pre>
+<p>environment somewhere</p>
+<p><span class="math inline"><em>e</em><sup><em>e</em><sup><em>e</em><sup><em>e</em><sup><em>e</em><sup><em>e</em><sup><em>e</em></sup></sup></sup></sup></sup></sup></span> <span class="math inline"><em>π</em><sup><em>π</em><sup><em>π</em><sup><em>π</em><sup><em>π</em><sup><em>π</em><sup><em>π</em></sup></sup></sup></sup></sup></sup></span> <span class="math inline"><em>ψ</em><sup><em>ψ</em><sup><em>ψ</em><sup><em>ψ</em><sup><em>ψ</em><sup><em>ψ</em><sup><em>ψ</em></sup></sup></sup></sup></sup></sup></span></p>
+</section>
+<section>
+  <h2>
+    Pure html slide
+  </h2>
+  It is also nice to revive html as a markup language.
+
+  $$
+  \int_{\partial A} f = 0
+  $$
+
+    <pre class="sourceCode latex"><code>
+        \int_{\partial A} f = 0
+    </code></pre>
+</section>
+
+
+<section
+  data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm"
+  data-background-video-loop
+  data-background-video-muted>
+  <h1 style='color:red'>Video background</h1>
+</section>
+
+<section>
+
+  <section
+    data-background="https://media.giphy.com/media/yjMJCtA5AJ6hi/giphy.gif"
+  >
+
+    <h1 style='color:blue'>Gif background</h1>
+    <h3 style='color:red'>Press down key</h3>
+
+  </section>
+
+  <section data-background-color='#ffaa22' data-transition='zoom'>
+
+    <h1>Intro</h1>
+
+<small >
+
+  <p class="fragment grow">grow</p>
+  <p class="fragment shrink">shrink</p>
+  <p class="fragment fade-out">fade-out</p>
+  <p class="fragment fade-up">fade-up (also down, left and right!)</p>
+  <p class="fragment current-visible">visible only once</p>
+  <p class="fragment highlight-current-blue">blue only once</p>
+  <p class="fragment highlight-red">highlight-red</p>
+  <p class="fragment highlight-green">highlight-green</p>
+  <p class="fragment highlight-blue">highlight-blue</p>
+
+</small>
+
+  </section>
+
+<section>
+
+<h1>Formulas !</h1>
+
+\[
+  \hat{T} (\mathbf{a}) =
+   e ^ {\mathbf{a}\cdot\nabla} =
+   e ^ {\frac{i}{\hbar}\mathbf{a}\cdot\hat{\mathbf{p}}}
+\]
+
+
+$$ \iiint_{V} f = 0$$
+
+</section>
+
+<section>
+
+  <h2>Python!</h2>
+
+<pre class="sourceCode python"><code>
+#! /usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import sys
+import logging
+
+if sys.version_info < (3, 2):
+    raise Exception("This program must use python 3.2 or greater")
+
+if __name__ == "__main__":
+    main()
+</code></pre>
+
+</section>
+</section>
+
+
+<section data-background="https://media.giphy.com/media/wGY9K8upRdJFm/giphy.gif">
+  <h1 style='color:white'>Thank you!</h1>
+  <img src="https://media.giphy.com/media/LUIvcbR6yytz2/giphy.gif" alt=""/>
+</section>
+
 
     </div>
   </div>
@@ -199,10 +244,81 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: true,
+
         // Push each slide change to the browser history
         history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: true,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+        
         // Transition style
-        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        transition: "fade",
+        
+        
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: '100%',
+        height: '100%',
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0,
+
         math: {
           mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js',
           config: 'TeX-AMS_HTML-full',
@@ -223,11 +339,20 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
         // Optional reveal.js plugins
         dependencies: [
           { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.js', async: true },
+          //{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/socket.io/socker.io.js', async: true },
+          //{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes-server/client.js', async: true },
           { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/math/math.js', async: true },
-          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.js', async: true }
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.js', async: true },
+
+          // Interpret Markdown in <section> elements
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
         ]
       });
     </script>
-    </body>
+
+  </body>
 </html>
