@@ -8,6 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="__revealjs_url__/css/reveal.css">
+  <link rel="stylesheet" href="__revealjs_url__/lib/css/zenburn.css">
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -153,8 +154,11 @@ include(main.html)
           //{ src: '__revealjs_url__/plugin/notes-server/client.js', async: true },
           { src: '__revealjs_url__/plugin/math/math.js', async: true },
           { src: '__revealjs_url__/plugin/notes/notes.js', async: true },
-          { src: '__revealjs_url__/plugin/markdown/marked.js', async: true },
-          { src: '__revealjs_url__/plugin/markdown/markdown.js', async: true },
+
+          // Interpret Markdown in <section> elements
+          { src: '__revealjs_url__/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '__revealjs_url__/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
         ]
       });
     </script>
