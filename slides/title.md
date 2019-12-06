@@ -1,46 +1,51 @@
-# Title of my talk
+# Papis
+### An open source/open data bibliography manager
+
+<!-- .slide: data-background="#aa5faf" -->
+<!-- .slide: data-transition="concave" -->
 
 <center>
-Fulano mengano
+Alejandro Gallo
+<br>
+<img style="height: 2em" src="images/logo.png">
 </center>
 
 ---
 
-Some other slide within markdown
+### Papis is
 
-And now press the down key...
+<img style="" src="images/example.svg">
 
-
---
-
-<!-- .slide: data-background="#aaffaf" -->
 <!-- .slide: data-transition="concave" -->
 
-<small>
-The Dirac equation in the form originally proposed by Dirac is:
+---
 
+### Papis stands for
 
-$$
-\left(\beta mc^2 + c\left(\sum_{n \mathop =1}^{3}\alpha_n p_n\right)\right) \psi (x,t) = i \hbar \frac{\partial\psi(x,t) }{\partial t}
-$$
+* owning your data
+  - know exactly what and where your data is
+* simple architecture
+  - every document is just a folder
+* extensibility
+* work in groups
+* play well with other tools (e.g. **git**)
 
-and the equation takes the form (remembering the definition
-of the covariant components of the 4-gradient)
+---
 
-$$
-{\displaystyle i\hbar \gamma ^{\mu }\partial _{\mu }\psi -mc\psi =0}
-$$
+### Growing community
 
-The complete system is summarized using the Minkowski metric on spacetime in the form
+<img style="" src="images/papis-header.png">
 
-$$
-\\{\gamma ^{\mu },\gamma ^{\nu }\\}=2\eta ^{\mu \nu }I_{4}
-$$
+---
 
-where the bracket expression
+### Growing papis based projects
 
-$$
-\\{a,b\\}=ab+ba
-$$
+<!-- .slide: data-background="images/papis-org.png" -->
 
-</small>
+---
+
+### We need your help
+
+<!-- .slide: data-background="images/issues.png" -->
+<img style="" src="images/help.gif">
+
